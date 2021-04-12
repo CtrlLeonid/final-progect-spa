@@ -12,23 +12,22 @@ export class About extends React.Component {
                         </div>
                         <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right"
                              data-aos-delay="100">
-                            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                            <p className="fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                                magna aliqua.
-                            </p>
+                            <h2>Тут нужно рассказать о деятельности и о том каие тут шорошие люди работают.</h2>
+                            <p className="fst-italic"><h5>
+                                О том что они трудятся не поклодая х...й на клиента и на его драгоценне средство
+                                передвижения.
+                            </h5></p>
                             <ul>
-                                <li><i className="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
+                                <li><i className="ri-check-double-line"></i><h6> Ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat.
-                                </li>
-                                <li><i className="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in
+                                </h6></li>
+                                <li><i className="ri-check-double-line"></i><h6> Duis aute irure dolor in reprehenderit in
                                     voluptate velit.
-                                </li>
-                                <li><i className="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
+                                </h6></li>
+                                <li><i className="ri-check-double-line"></i><h6> Ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
                                     storacalaperda mastiro dolore eu fugiat nulla pariatur.
-                                </li>
+                                </h6></li>
                             </ul>
                             <p>
                                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in

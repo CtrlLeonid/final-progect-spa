@@ -6,43 +6,49 @@ export class HomePage extends React.Component{
         return(
             <header id="header" className="fixed-top header-inner-pages">
                 <div className="container d-flex align-items-center justify-content-lg-between">
-                    <h1 className="logo me-auto me-lg-0"><Link to="/">Gp<span>.</span></Link></h1>
-                    <nav id="navbar" className="navbar order-last order-lg-0">
 
+                    <h1 className="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
+
+                    {/*<a href="index.html" className="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" className="img-fluid"/></a>*/}
+                    <nav id="navbar" className="navbar order-last order-lg-0">
                         <ul>
-                            <li><Link className="nav-link scrollto " to="#hero">Главная</Link></li>
-                            <li><Link className="nav-link scrollto" to="#services">Services</Link></li>
-                            <li><Link className="nav-link scrollto " to="#portfolio">Portfolio</Link></li>
-                            <li><Link className="nav-link scrollto" to="#team">Team</Link></li>
-                            <li className="dropdown"><Link to="#"><span>Акции</span> <i
-                                className="bi bi-chevron-down"></i></Link>
+                            <li><a className="nav-link scrollto " href="/">Главная</a></li>
+                            <li><a className="nav-link scrollto" href="#services">Фото</a></li>
+                            <li><a className="nav-link scrollto " href="#portfolio">Отзывы</a></li>
+                            {/*<li><a className="nav-link scrollto" href="#team">Team</a></li>*/}
+                            <li className="dropdown"><a href="#"><span>Виды работ</span> <i
+                                className="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li className="dropdown"><Link to="#"><span>Deep Drop Down</span> <i
-                                        className="bi bi-chevron-right"></i></Link>
+                                    <li><a href="#">Установка сигнализаций</a></li>
+                                    <li><a href="#">Установка имобилайзеров</a></li>
+                                    <li><a href="#">Drop Down 3</a></li>
+                                    <li><a href="#">Drop Down 4</a></li>
+                                    <li className="dropdown"><a href="#"><span>Drop Down</span> <i
+                                        className="bi bi-chevron-right"></i></a>
                                         <ul>
-                                            <li><Link to="#">Deep Drop Down 1</Link></li>
-                                            <li><Link to="#">Deep Drop Down 2</Link></li>
-                                            <li><Link to="#">Deep Drop Down 3</Link></li>
-                                            <li><Link to="#">Deep Drop Down 4</Link></li>
-                                            <li><Link to="#">Deep Drop Down 5</Link></li>
+                                            <li><a href="#">Deep Drop Down 1</a></li>
+                                            <li><a href="#">Deep Drop Down 2</a></li>
+                                            <li><a href="#">Deep Drop Down 3</a></li>
+                                            <li><a href="#">Deep Drop Down 4</a></li>
+                                            <li><a href="#">Deep Drop Down 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><Link to="#">Drop Down 1</Link></li>
-                                    <li><Link to="#">Drop Down 2</Link></li>
-                                    <li><Link to="#">Drop Down 3</Link></li>
-                                    <li><Link to="#">Drop Down 4</Link></li>
                                 </ul>
                             </li>
-                            <li><Link className="nav-link scrollto" to="#about">О нас</Link></li>
-                            <li><Link className="nav-link scrollto" to="#contact">Контакты</Link></li>
+                            <li><a className="nav-link scrollto" href="#about">О нас</a></li>
+                            <li><a className="nav-link scrollto" href="#contact">Контакты</a></li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>
                     </nav>
 
-                    <Link to="#about" className="get-started-btn scrollto">Get Started</Link>
+
+                    <a href="/RegPage" className="get-started-btn ">ВХОД</a>
 
                 </div>
+                <main id="main"/>
             </header>
+
+
         )
     }
 }

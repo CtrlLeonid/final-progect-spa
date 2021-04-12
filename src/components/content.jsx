@@ -11,7 +11,7 @@ export class ContentOne extends React.Component {
                     <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
                         <div className="col-xl-6 col-lg-8">
                             <h1>Работы по авто-электрике любой сложности<span>.</span></h1>
-                            <h2>We are team of talented digital marketers</h2>
+                            <h2>Качество работ гарантируем</h2>
                         </div>
                     </div>
 
@@ -19,31 +19,31 @@ export class ContentOne extends React.Component {
                         <div className="col-xl-2 col-md-4">
                             <div className="icon-box">
                                 <i className="ri-store-line"></i>
-                                <h3><Link to="">Lorem Ipsum</Link></h3>
+                                <h3><Link to="">Акции</Link></h3>
                             </div>
                         </div>
                         <div className="col-xl-2 col-md-4">
                             <div className="icon-box">
                                 <i className="ri-bar-chart-box-line"></i>
-                                <h3><Link to="">Dolor Sitema</Link></h3>
+                                <h3><Link to="">Система скидок</Link></h3>
                             </div>
                         </div>
                         <div className="col-xl-2 col-md-4">
                             <div className="icon-box">
                                 <i className="ri-calendar-todo-line"></i>
-                                <h3><Link to="">Sedare Perspiciatis</Link></h3>
+                                <h3><Link to="">Загруженность</Link></h3>
                             </div>
                         </div>
-                        <div className="col-xl-2 col-md-4">
+                        {/*<div className="col-xl-2 col-md-4">
                             <div className="icon-box">
                                 <i className="ri-paint-brush-line"></i>
                                 <h3><Link to="">Magni Dolores</Link></h3>
                             </div>
-                        </div>
+                        </div>*/}
                         <div className="col-xl-2 col-md-4">
                             <div className="icon-box">
                                 <i className="ri-database-2-line"></i>
-                                <h3><Link to="">Nemos Enimade</Link></h3>
+                                <h3><Link to="">Оборудование</Link></h3>
                             </div>
                         </div>
                     </div>

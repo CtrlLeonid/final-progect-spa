@@ -5,7 +5,9 @@ import {HomePage} from "./components/Header";
 import {Footer} from "./components/Footer";
 import {ContentOne} from "./components/content";
 import {About} from "./components/About";
-import {Clients} from "./components/Clients";
+import {RegPage} from "./components/RegPage";
+import {} from "./style.sass"
+import {} from "./style.js"
 
 
 function App() {
@@ -15,9 +17,9 @@ function App() {
       <BrowserRouter>
           <HomePage/>
             <Route exact path="/" render={()=><ContentOne/>}/>
-            <Route path="/" render={()=><About/>}/>
-            <Route path="/" render={()=><Clients/>}/>
-        {/*  <Route path="/contact" render={()=>}/>
+            <Route exact path="/" render={()=><About/>}/>
+            <Route  path="/RegPage" render={()=><RegPage/>}/>
+          {/*<Route path="/contact" render={()=>}/>
         <Route path="/post/:id" render={()=>}/>*/}
           <Footer/>
       </BrowserRouter>
