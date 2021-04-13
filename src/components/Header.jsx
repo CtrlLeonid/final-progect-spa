@@ -5,7 +5,7 @@ export class HomePage extends React.Component{
     render() {
         return(
             <header id="header" className="fixed-top header-inner-pages">
-                <div className="container d-flex align-items-center justify-content-lg-between">
+                <div className="container-sm d-flex align-items-center justify-content-lg-between">
 
                     <h1 className="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
 

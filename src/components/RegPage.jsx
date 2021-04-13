@@ -1,7 +1,37 @@
 import React from "react";
 
-export function RegPage() {
 
+export class RegPage extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+            const signupButton = document.getElementById('signup-button'),
+            loginButton = document.getElementById('login-button'),
+            userForms = document.getElementById('user_options-forms')
+
+
+            signupButton.addEventListener(
+                'click',
+                () => {
+                    userForms.classList.remove('bounceRight');
+                    userForms.classList.add('bounceLeft');
+                },
+                false),
+
+
+            loginButton.addEventListener(
+                'click',
+                () => {
+                    userForms.classList.remove('bounceLeft');
+                    userForms.classList.add('bounceRight');
+                },
+                false)
+    }
+
+    render() {
         return(
             <section className="user">
                 <div className="user_options-container">
@@ -66,22 +96,7 @@ export function RegPage() {
                 </div>
             </section>
         )
-
+    }
 }
 
 
-const signupButton = document.getElementById('signup-button'),
-    loginButton = document.getElementById('login-button'),
-    userForms = document.getElementById('user_options-forms')
-
-
-signupButton.addEventListener('click', () => {
-    userForms.classList.remove('bounceRight')
-    userForms.classList.add('bounceLeft')
-}, false)
-
-
-loginButton.addEventListener('click', () => {
-    userForms.classList.remove('bounceLeft')
-    userForms.classList.add('bounceRight')
-}, false)

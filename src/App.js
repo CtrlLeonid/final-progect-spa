@@ -7,7 +7,7 @@ import {ContentOne} from "./components/content";
 import {About} from "./components/About";
 import {RegPage} from "./components/RegPage";
 import {} from "./style.sass"
-import {} from "./style.js"
+
 
 
 function App() {

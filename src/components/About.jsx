@@ -12,7 +12,7 @@ export class About extends React.Component {
                         </div>
                         <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right"
                              data-aos-delay="100">
-                            <h2>Тут нужно рассказать о деятельности и о том каие тут шорошие люди работают.</h2>
+                            <h2>Тут нужно рассказать о деятельности и о том каие тут хорошие люди работают.</h2>
                             <p className="fst-italic"><h5>
                                 О том что они трудятся не поклодая х...й на клиента и на его драгоценне средство
                                 передвижения.
@@ -36,8 +36,8 @@ export class About extends React.Component {
                                 proident
                             </p>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </section>
         )
