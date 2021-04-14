@@ -2,6 +2,17 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 export class HomePage extends React.Component{
+
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+
+    }
+
+
+
     render() {
         return(
             <header id="header" className="fixed-top header-inner-pages">
@@ -42,13 +53,12 @@ export class HomePage extends React.Component{
                     </nav>
 
 
-                    <a href="/RegPage" className="get-started-btn ">ВХОД</a>
+                    <a href="/reg-page" className="get-started-btn "hidden="">ВХОД</a>
+                    <a href="/reg-page" className="get-started-btn " hidden="true">Личный кабинет</a>
 
                 </div>
                 <main id="main"/>
             </header>
-
-
         )
     }
 }

@@ -18,7 +18,7 @@ function App() {
           <HomePage/>
             <Route exact path="/" render={()=><ContentOne/>}/>
             <Route exact path="/" render={()=><About/>}/>
-            <Route  path="/RegPage" render={()=><RegPage/>}/>
+            <Route  path="/reg-page" render={()=><RegPage/>}/>
           {/*<Route path="/contact" render={()=>}/>
         <Route path="/post/:id" render={()=>}/>*/}
           <Footer/>
