@@ -14,8 +14,7 @@ export class About extends React.Component {
                              data-aos-delay="100">
                             <h2>Тут нужно рассказать о деятельности и о том каие тут хорошие люди работают.</h2>
                             <p className="fst-italic"><h5>
-                                О том что они трудятся не поклодая х...й на клиента и на его драгоценне средство
-                                передвижения.
+                                О том что они трудятся на благо драгоценного средства передвижения клиента.
                             </h5></p>
                             <ul>
                                 <li><i className="ri-check-double-line"></i><h6> Ullamco laboris nisi ut aliquip ex ea

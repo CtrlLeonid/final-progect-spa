@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+
 export class HomePage extends React.Component{
 
     constructor(props) {
@@ -11,21 +12,19 @@ export class HomePage extends React.Component{
 
     }
 
-
-
     render() {
         return(
             <header id="header" className="fixed-top header-inner-pages">
                 <div className="container-sm d-flex align-items-center justify-content-lg-between">
 
-                    <h1 className="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
+                    <h1 className="logo me-auto me-lg-0"><a href="/">Gp<span>.</span></a></h1>
 
                     {/*<a href="index.html" className="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" className="img-fluid"/></a>*/}
                     <nav id="navbar" className="navbar order-last order-lg-0">
                         <ul>
                             <li><a className="nav-link scrollto " href="/">Главная</a></li>
                             <li><a className="nav-link scrollto" href="#services">Фото</a></li>
-                            <li><a className="nav-link scrollto " href="#portfolio">Отзывы</a></li>
+                            <li><a className="nav-link scrollto " href="/review">Отзывы</a></li>
                             {/*<li><a className="nav-link scrollto" href="#team">Team</a></li>*/}
                             <li className="dropdown"><a href="#"><span>Виды работ</span> <i
                                 className="bi bi-chevron-down"></i></a>
@@ -46,15 +45,16 @@ export class HomePage extends React.Component{
                                     </li>
                                 </ul>
                             </li>
-                            <li><a className="nav-link scrollto" href="#about">О нас</a></li>
-                            <li><a className="nav-link scrollto" href="#contact">Контакты</a></li>
+                            <li><a className="nav-link scrollto" href="#">О нас</a></li>
+                            <li><a className="nav-link scrollto" href="/contact">Контакты</a></li>
                         </ul>
-                        <i className="bi bi-list mobile-nav-toggle"></i>
+                        <i className="bi bi-list mobile-nav-toggle"/>
                     </nav>
 
 
                     <a href="/reg-page" className="get-started-btn "hidden="">ВХОД</a>
-                    <a href="/reg-page" className="get-started-btn " hidden="true">Личный кабинет</a>
+                    <a href="/user-area" className="get-started-btn " hidden="">Личный кабинет</a>
+                    <a href="/reg-page" className="get-started-btn " hidden="true">ВЫХОД</a>
 
                 </div>
                 <main id="main"/>

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export class Footer extends React.Component {
     render() {
         return(
-            <footer id="footer">
+            <footer id="footer" className="footerheight">
                 <div className="footer-top">
                     <div className="container">
                         <div className="row">
@@ -31,7 +31,6 @@ export class Footer extends React.Component {
                                     <li><i className="bx bx-chevron-right"></i> <Link to="#">Home</Link></li>
                                     <li><i className="bx bx-chevron-right"></i> <Link to="#">About us</Link></li>
                                     <li><i className="bx bx-chevron-right"></i> <Link to="#">Services</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Terms of service</Link></li>
                                     <li><i className="bx bx-chevron-right"></i> <Link to="#">Privacy policy</Link></li>
                                 </ul>
                             </div>
@@ -39,19 +38,18 @@ export class Footer extends React.Component {
                             <div className="col-lg-3 col-md-6 footer-links">
                                 <h4>Наши партнеры</h4>
                                 <ul>
-                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Web Design</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Web Development</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Product Management</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Marketing</Link></li>
-                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Graphic Design</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Моторист</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Маляр</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Арматурщик</Link></li>
+                                    <li><i className="bx bx-chevron-right"></i> <Link to="#">Запю части</Link></li>
                                 </ul>
                             </div>
 
                             <div className="col-lg-4 col-md-6 footer-newsletter">
-                                <h4>Our Newsletter</h4>
-                                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                                <h4>Рассылка новостей</h4>
+                                <p>Сдесь ВЫ можите подписаться на уведомление об акциях</p>
                                 <form action="" method="post">
-                                    <input type="email" name="email"/><input type="submit" value="Subscribe"/>
+                                    <input type="email" name="email" placeholder="Введите email" /><input type="submit" value="Отправить"/>
                                 </form>
 
                             </div>

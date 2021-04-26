@@ -5,7 +5,15 @@ export class RegPage extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            title: "",
+            text: "",
+            author: "",
+            redirect: false,
+        }
     }
+
+
 
     componentDidMount() {
             const signupButton = document.getElementById('signup-button'),
@@ -29,7 +37,15 @@ export class RegPage extends React.Component {
                     userForms.classList.add('bounceRight');
                 },
                 false)
+
+            const formData = new FormData();
+                fetch('php/handlerReg.php',{
+                    method: 'POST',
+                    body: formData
+                }).then(response=>response.json())
+                    .then(result=>console.log(result));
     }
+
 
     render() {
         return(
@@ -55,11 +71,11 @@ export class RegPage extends React.Component {
                             <form className="forms_form">
                                 <fieldset className="forms_fieldset">
                                     <div className="forms_field">
-                                        <input type="email" placeholder="Email" className="forms_field-input" required
+                                        <input name="email" type="email" placeholder="Email" className="forms_field-input" required
                                                autoFocus/>
                                     </div>
                                     <div className="forms_field">
-                                        <input type="password" placeholder="Password" className="forms_field-input"
+                                        <input name="pass" type="password" placeholder="Password" className="forms_field-input"
                                                required/>
                                     </div>
                                 </fieldset>
@@ -71,27 +87,27 @@ export class RegPage extends React.Component {
                         </div>
                         <div className="user_forms-signup">
                             <h2 className="forms_title">окно реристрации</h2>
-                            <form className="forms_form">
+                            <form className="forms_form" onsubmit="sendForm(this); return false;">
                                 <fieldset className="forms_fieldset">
                                     <div className="forms_field">
-                                        <input type="text" placeholder="Name" className="forms_field-input"
+                                        <input name="name" type="text" placeholder="Name" className="forms_field-input"
                                                required/>
                                     </div>
                                     <div className="forms_field">
-                                        <input type="text" placeholder="Last name" className="forms_field-input"
+                                        <input name="lastname" type="text" placeholder="Last name" className="forms_field-input"
                                                required/>
                                     </div>
                                     <div className="forms_field">
-                                        <input type="email" placeholder="Email" className="forms_field-input" required/>
+                                        <input name="email" type="email" placeholder="Email" className="forms_field-input" required/>
                                     </div>
                                     <div className="forms_field">
-                                        <input type="password" placeholder="Password" className="forms_field-input"
+                                        <input name="pass" type="password" placeholder="Password" className="forms_field-input"
                                                required/>
                                     </div>
                                 </fieldset>
-                                <div className="forms_buttons">
-                                    <input type="submit" value="Регистрация" className="forms_buttons-action"/>
-                                </div>
+                                    <div className="forms_buttons">
+                                        <input type="submit" value="Регистрация" className="forms_buttons-action"/>
+                                    </div>
                             </form>
                         </div>
                     </div>
