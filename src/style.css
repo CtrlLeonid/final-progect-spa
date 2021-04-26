@@ -40,7 +40,8 @@
 }
 
 .userbacground{
-    background: url("./img/us.jpg");
+    background: url("./img/us.jpg") no-repeat;
+    
 }
 
 .ava{
