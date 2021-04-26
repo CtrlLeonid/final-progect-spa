@@ -35,7 +35,16 @@ class App extends React.Component{
         localStorage.setItem("user", JSON.stringify(data))
     }
 
-  render() {
+    componentDidMount() {
+        const user = JSON.parse(localStorage.getItem('user'))
+        if(user){
+            this.setState(
+                user
+            )
+        }
+    }
+
+    render() {
       return (
           <div className="App">
               <BrowserRouter>
@@ -43,7 +52,7 @@ class App extends React.Component{
                   <Route exact path="/" render={(props)=><ContentOne {...props}/>}/>
                   <Route exact path="/" render={(props)=><About {...props}/>}/>
                   <Route  path="/reg-page" render={(props)=><RegPage {...props} saveUser={this.saveUser}/>}/>
-                  <Route path="/user-area" render={(props)=><UserArea {...props}/>}/>
+                  <Route path="/user-area" render={(props)=><UserArea {...props} user={this.state.user}/>}/>
                   <Route path="/review" render={(props)=><Review {...props}/>}/>
                   <Route path="/contact" render={(props)=><Contact {...props}/>}/>
                   <Footer/>

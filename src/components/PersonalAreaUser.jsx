@@ -3,6 +3,10 @@ import {} from "../style.css"
 
 export class UserArea extends React.Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return(
             <section className="userbacground" >
@@ -19,8 +23,8 @@ export class UserArea extends React.Component {
                     <div className="container" data-aos="fade-up">
                         <div className="row">
                             <div className="col-sm-4">
-                                <p className="textcolor"><h4>Имя: </h4></p>
-                                <p className="textcolor"><h4>Фамилия: </h4></p>
+                                <p className="textcolor"><h4>Имя:{this.props.user.name} </h4></p>
+                                <p className="textcolor"><h4>Фамилия:{this.props.user.lastname} </h4></p>
                             </div>
                             <div className="col-sm-4">
                                 <p className="textcolor"><h4>Изменить пароль</h4></p>
