@@ -13,22 +13,44 @@ import {Review} from "./components/Review";
 import {Contact} from "./components/Contact";
 
 
-function App() {
+class App extends React.Component{
 
-  return (
-    <div className="App">
-      <BrowserRouter>
-          <HomePage/>
-            <Route exact path="/" render={(props)=><ContentOne {...props}/>}/>
-            <Route exact path="/" render={(props)=><About {...props}/>}/>
-            <Route  path="/reg-page" render={(props)=><RegPage {...props}/>}/>
-            <Route path="/user-area" render={(props)=><UserArea {...props}/>}/>
-            <Route path="/review" render={(props)=><Review {...props}/>}/>
-            <Route path="/contact" render={(props)=><Contact {...props}/>}/>
-          <Footer/>
-      </BrowserRouter>
-    </div>
-  );
+    constructor(props) {
+        super(props);
+        this.state={
+            name:"",
+            lastname:"",
+            email:"",
+        }
+    }
+
+    saveUser=(data)=>{
+        this.setState(
+            {
+                name: data.name,
+                lastname:data.lastname,
+                email:data.email,
+            }
+        )
+        localStorage.setItem("user", JSON.stringify(data))
+    }
+
+  render() {
+      return (
+          <div className="App">
+              <BrowserRouter>
+                  <HomePage/>
+                  <Route exact path="/" render={(props)=><ContentOne {...props}/>}/>
+                  <Route exact path="/" render={(props)=><About {...props}/>}/>
+                  <Route  path="/reg-page" render={(props)=><RegPage {...props} saveUser={this.saveUser}/>}/>
+                  <Route path="/user-area" render={(props)=><UserArea {...props}/>}/>
+                  <Route path="/review" render={(props)=><Review {...props}/>}/>
+                  <Route path="/contact" render={(props)=><Contact {...props}/>}/>
+                  <Footer/>
+              </BrowserRouter>
+          </div>
+      );
+  }
 }
 
 export default App;
